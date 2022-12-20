@@ -16,12 +16,12 @@ class Produto{
     }
 
     lerDados(){
-    
+
         let produto ={}
 
         produto.id = this.id;
         produto.nomeProduto = document.getElementById('pdnome').value
-        produto.nomeProduto = document.getElementById('pdpreco').value
+        produto.precoProduto = document.getElementById('pdpreco').value
 
         return produto
     }
@@ -31,7 +31,7 @@ class Produto{
 
         if(produto.nomeProduto == ''){
             msg += 'Por favor, insira corretamente o nome do produto! \n'
-        } 
+        }
 
         if(produto.precoProduto == ''){
             msg += 'Por favor, insira corretamente o preço do produto! \n'
@@ -89,8 +89,8 @@ class Produto{
             }
             alert("O item foi apagado com sucesso!")
         }
-            
+
     }
-    
+
 
 var produto = new Produto();
